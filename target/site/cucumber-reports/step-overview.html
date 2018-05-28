@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cucumber-JVM Html Reports - Step Overview</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+
+<script type="text/javascript" src="highcharts.js"></script>
+<script type="text/javascript" src="highcharts-3d.js"></script>
+
+<link rel="stylesheet" href="bootstrap.min.css" type="text/css"/>
+
+<link rel="stylesheet" href="reporting.css" type="text/css"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#tablesorter").tablesorter();
+});
+</script>
+
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-jvm Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-6">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>cucumber-jvm-example</td>
+                          <td>42</td>
+                        <td>25 May 2018, 08:29</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="title">
+  <h2>Step Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+
+<div class="container-fluid" id="report-details">
+  <table id="tablesorter" class="stats-table">
+
+    <thead>
+      <tr class="header">
+        <th id="stats-header-feature">Implementation</th>
+        <th id="stats-header-occurrences">Occurrences</th>
+        <th id="stats-header-duration">Duration</th>
+        <th id="stats-header-average">Average</th>
+        <th id="stats-header-status">Ratio</th>
+      </tr>
+    </thead>
+
+    <tbody>
+              <tr>
+                    
+          <td class="tagname">NewSearchTest.Setup(Scenario)</td>
+          <td>9</td>
+          <td class="duration-format">3m 15s 218ms</td>
+          <td class="duration-format">21s 690ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">LoginNxlEditorTest.when_I_open_browser()</td>
+          <td>8</td>
+          <td class="duration-format">2m 39s 348ms</td>
+          <td class="duration-format">19s 918ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">ClearEditorTest.Setup(Scenario)</td>
+          <td>1</td>
+          <td class="duration-format">47s 433ms</td>
+          <td class="duration-format">47s 433ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewReferenceTest.Setup(Scenario)</td>
+          <td>2</td>
+          <td class="duration-format">43s 593ms</td>
+          <td class="duration-format">21s 796ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">LoginNxlEditorTest.put_in_and(String,String)</td>
+          <td>8</td>
+          <td class="duration-format">31s 961ms</td>
+          <td class="duration-format">03s 995ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewPhraseNameTest.Setup(Scenario)</td>
+          <td>1</td>
+          <td class="duration-format">22s 400ms</td>
+          <td class="duration-format">22s 400ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewOtherNameTest.Setup(Scenario)</td>
+          <td>1</td>
+          <td class="duration-format">21s 509ms</td>
+          <td class="duration-format">21s 509ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewAuthorTest.Setup(Scenario)</td>
+          <td>1</td>
+          <td class="duration-format">20s 904ms</td>
+          <td class="duration-format">20s 904ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewScientificNameTest.Setup(Scenario)</td>
+          <td>1</td>
+          <td class="duration-format">19s 959ms</td>
+          <td class="duration-format">19s 959ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewInstanceTest.Setup(Scenario)</td>
+          <td>1</td>
+          <td class="duration-format">18s 305ms</td>
+          <td class="duration-format">18s 305ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewReferenceTest.the_values(String,String,String,String,String)</td>
+          <td>2</td>
+          <td class="duration-format">12s 797ms</td>
+          <td class="duration-format">06s 398ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewScientificNameTest.the_values(String,String,String,String,String,String)</td>
+          <td>1</td>
+          <td class="duration-format">11s 853ms</td>
+          <td class="duration-format">11s 853ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewReferenceTest.i_click_on_save_reference()</td>
+          <td>2</td>
+          <td class="duration-format">08s 765ms</td>
+          <td class="duration-format">04s 382ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewSearchTest.user_selects_Authors_from_search_criterion_picklist_and_enters(String)</td>
+          <td>3</td>
+          <td class="duration-format">08s 082ms</td>
+          <td class="duration-format">02s 694ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewSearchTest.user_selects_Names_from_search_criterion_picklist_and_enters(String)</td>
+          <td>3</td>
+          <td class="duration-format">07s 666ms</td>
+          <td class="duration-format">02s 555ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewSearchTest.user_selects_References_from_search_criterion_picklist_and_enters(String)</td>
+          <td>3</td>
+          <td class="duration-format">07s 657ms</td>
+          <td class="duration-format">02s 552ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewPhraseNameTest.the_values_at(String,String,String,String,String,String)</td>
+          <td>1</td>
+          <td class="duration-format">07s 619ms</td>
+          <td class="duration-format">07s 619ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewOtherNameTest.the_values(String,String,String)</td>
+          <td>1</td>
+          <td class="duration-format">06s 916ms</td>
+          <td class="duration-format">06s 916ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewSearchTest.system_responds_with_results_of_all(String)</td>
+          <td>3</td>
+          <td class="duration-format">06s 249ms</td>
+          <td class="duration-format">02s 083ms</td>
+          <td class="failed">66.666664%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewSearchTest.system_responds_with_results_of(String)</td>
+          <td>3</td>
+          <td class="duration-format">06s 154ms</td>
+          <td class="duration-format">02s 051ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewSearchTest.clicks_on_search()</td>
+          <td>9</td>
+          <td class="duration-format">05s 874ms</td>
+          <td class="duration-format">652ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">ClearEditorTest.system_clears_out()</td>
+          <td>1</td>
+          <td class="duration-format">05s 318ms</td>
+          <td class="duration-format">05s 318ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewInstanceTest.the_values(String,String,String)</td>
+          <td>1</td>
+          <td class="duration-format">05s 183ms</td>
+          <td class="duration-format">05s 183ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewAuthorTest.the_values(String,String)</td>
+          <td>1</td>
+          <td class="duration-format">04s 807ms</td>
+          <td class="duration-format">04s 807ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewSearchTest.teardown(Scenario)</td>
+          <td>9</td>
+          <td class="duration-format">04s 364ms</td>
+          <td class="duration-format">484ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewReferenceTest.reference_is_added_to_the_database(String)</td>
+          <td>2</td>
+          <td class="duration-format">04s 165ms</td>
+          <td class="duration-format">02s 082ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewInstanceTest.searching_a_new_Reference_test_with(String)</td>
+          <td>1</td>
+          <td class="duration-format">03s 123ms</td>
+          <td class="duration-format">03s 123ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">LoginNxlEditorTest.teardown(Scenario)</td>
+          <td>8</td>
+          <td class="duration-format">02s 937ms</td>
+          <td class="duration-format">367ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">ClearEditorTest.user_selects_NXL_Editor_from_New_Scientific_Name_screen()</td>
+          <td>1</td>
+          <td class="duration-format">02s 807ms</td>
+          <td class="duration-format">02s 807ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewPhraseNameTest.phrase_is_added_to_database(String)</td>
+          <td>1</td>
+          <td class="duration-format">02s 073ms</td>
+          <td class="duration-format">02s 073ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewOtherNameTest.other_is_added_to_database(String)</td>
+          <td>1</td>
+          <td class="duration-format">02s 069ms</td>
+          <td class="duration-format">02s 069ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewInstanceTest.instance_is_created()</td>
+          <td>1</td>
+          <td class="duration-format">02s 066ms</td>
+          <td class="duration-format">02s 066ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewAuthorTest.author_is_added_to_the_database(String)</td>
+          <td>1</td>
+          <td class="duration-format">02s 060ms</td>
+          <td class="duration-format">02s 060ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewScientificNameTest.new_scientific_name_is_added_to_database(String)</td>
+          <td>1</td>
+          <td class="duration-format">02s 059ms</td>
+          <td class="duration-format">02s 059ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewReferenceTest.teardown(Scenario)</td>
+          <td>2</td>
+          <td class="duration-format">992ms</td>
+          <td class="duration-format">496ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewOtherNameTest.teardown(Scenario)</td>
+          <td>1</td>
+          <td class="duration-format">485ms</td>
+          <td class="duration-format">485ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">ClearEditorTest.teardown(Scenario)</td>
+          <td>1</td>
+          <td class="duration-format">396ms</td>
+          <td class="duration-format">396ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewInstanceTest.teardown(Scenario)</td>
+          <td>1</td>
+          <td class="duration-format">381ms</td>
+          <td class="duration-format">381ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewAuthorTest.teardown(Scenario)</td>
+          <td>1</td>
+          <td class="duration-format">342ms</td>
+          <td class="duration-format">342ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewInstanceTest.i_click_on_create_instance()</td>
+          <td>1</td>
+          <td class="duration-format">325ms</td>
+          <td class="duration-format">325ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewOtherNameTest.i_click_on_save_Other_Name()</td>
+          <td>1</td>
+          <td class="duration-format">308ms</td>
+          <td class="duration-format">308ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewAuthorTest.i_click_on_save_author()</td>
+          <td>1</td>
+          <td class="duration-format">303ms</td>
+          <td class="duration-format">303ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewPhraseNameTest.i_click_on_save_phrase_Name()</td>
+          <td>1</td>
+          <td class="duration-format">292ms</td>
+          <td class="duration-format">292ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewScientificNameTest.i_click_on_save()</td>
+          <td>1</td>
+          <td class="duration-format">290ms</td>
+          <td class="duration-format">290ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewScientificNameTest.teardown(Scenario)</td>
+          <td>1</td>
+          <td class="duration-format">198ms</td>
+          <td class="duration-format">198ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewPhraseNameTest.teardown(Scenario)</td>
+          <td>1</td>
+          <td class="duration-format">167ms</td>
+          <td class="duration-format">167ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewInstanceTest.show_instances_for_name_button_is_displayed()</td>
+          <td>1</td>
+          <td class="duration-format">134ms</td>
+          <td class="duration-format">134ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewSearchTest.system_responds_with_callout_from_search_box_reading_Please_fill_out_this_field()</td>
+          <td>3</td>
+          <td class="duration-format">121ms</td>
+          <td class="duration-format">040ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">LoginNxlEditorTest.i_should_not_be_able_to_login()</td>
+          <td>7</td>
+          <td class="duration-format">109ms</td>
+          <td class="duration-format">015ms</td>
+          <td class="failed">85.71429%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">LoginNxlEditorTest.i_should_be_able_to_login()</td>
+          <td>1</td>
+          <td class="duration-format">015ms</td>
+          <td class="duration-format">015ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">BeforeAfter.GlobalTestSetup(Scenario)</td>
+          <td>25</td>
+          <td class="duration-format">008ms</td>
+          <td class="duration-format">000ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">BeforeAfter.GlobalTestTearDown(Scenario)</td>
+          <td>25</td>
+          <td class="duration-format">004ms</td>
+          <td class="duration-format">000ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+              <tr>
+                    
+          <td class="tagname">NewSearchTest.the_User_is_logged_in()</td>
+          <td>9</td>
+          <td class="duration-format">001ms</td>
+          <td class="duration-format">000ms</td>
+          <td class="passed">100.0%</td>
+        </tr>
+          </tbody>
+
+    <tfoot>
+      <tr>
+        <td>53</td>
+        <td>177</td>
+        <td class="duration-format">11m 58s 188ms</td>
+        <td class="duration-format">04s 057ms</td>
+        <td>Totals</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+      <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+      <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Cucumber-JVM Reports</a>
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cucumber-JVM Html Reports - Tag: @Search</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+
+<script type="text/javascript" src="highcharts.js"></script>
+<script type="text/javascript" src="highcharts-3d.js"></script>
+
+<link rel="stylesheet" href="bootstrap.min.css" type="text/css"/>
+
+<link rel="stylesheet" href="reporting.css" type="text/css"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#tablesorter").tablesorter();
+});
+</script>
+
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-jvm Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation" ><a href="step-overview.html">Steps</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-6">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>cucumber-jvm-example</td>
+                          <td>42</td>
+                        <td>25 May 2018, 08:29</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="title">
+  <h2>Tag Report</h2>
+  </div>
+
+
+<div class="container-fluid" id="report-summary">
+  <table class="stats-table">
+    <thead>
+  <tr class="header">
+        <th></th>
+    <th id="stats-header-scenarios" colspan="3">Scenarios</th>
+    <th id="stats-header-steps" colspan="7">Steps</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <th id="stats-header-key">Tag</th>
+        <th id="stats-header-scenarios-total">Total</th>
+    <th id="stats-header-scenarios-passed">Passed</th>
+    <th id="stats-header-scenarios-failed">Failed</th>
+    <th id="stats-header-steps-total">Total</th>
+    <th id="stats-header-steps-passed"    class="passed">Passed</th>
+    <th id="stats-header-steps-failed"    class="failed">Failed</th>
+    <th id="stats-header-steps-skipped"   class="skipped">Skipped</th>
+    <th id="stats-header-steps-pending"   class="pending">Pending</th>
+    <th id="stats-header-steps-undefined" class="undefined">Undefined</th>
+    <th id="stats-header-steps-missing"   class="missing">Missing</th>
+    <th id="stats-header-duration">Duration</th>
+    <th id="stats-header-status">Status</th>
+  </tr>
+</thead>
+    <tr>
+      <td class="tagname"><a href="Search.html">@Search</a></td>
+      <td>9</td>
+      <td>8</td>
+      <td>1</td>
+      <td>36</td>
+      <td>35</td>
+      <td   class="failed"    >1</td>
+      <td >0</td>
+      <td >0</td>
+      <td >0</td>
+      <td >0</td>
+      <td class="duration-format">41s 807ms</td>
+      <td class="failed">Failed</td>
+    </tr>
+  </table>
+</div>
+
+<div class="container-fluid" id="report-details">
+      <a href="NewSearchTest-feature.html">View Feature File</a>
+    <div class="feature-tags"><a href="Search.html">@Search</a>, <a href="Negative.html">@Negative</a>, <a href="All.html">@All</a></div>
+    <div class="passed"><span class="step-keyword">Before </span><i>BeforeAfter.GlobalTestSetup(Scenario)</i><span class="step-duration"></span></div><div class="passed"><span class="step-keyword">Before </span><i>NewSearchTest.Setup(Scenario)</i><span class="step-duration"></span></div>
+    <div class="passed"><span class="element-keyword">Scenario Outline: </span><span class="element-name">Search on author fails--Negative Scenario</span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">The User is logged in</span><span class="step-duration">000ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">User selects Authors from search criterion picklist and enters &quot;&quot;</span><span class="step-duration">02s 902ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">clicks on search</span><span class="step-duration">340ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">System responds with callout from search box reading Please fill out this field</span><span class="step-duration">041ms</span></div>
+      
+            <div><div class="output_message">Finished Scenario</div></div>
+      <div></div>
+        <div class="passed"><span class="step-keyword">After </span><i>BeforeAfter.GlobalTestTearDown(Scenario)</i><span class="step-duration"></span></div><div class="passed"><span class="step-keyword">After </span><i>NewSearchTest.teardown(Scenario)</i><span class="step-duration"></span></div>
+    <br>
+      <a href="NewSearchTest-feature.html">View Feature File</a>
+    <div class="feature-tags"><a href="Positive.html">@Positive</a>, <a href="Search.html">@Search</a>, <a href="All.html">@All</a></div>
+    <div class="passed"><span class="step-keyword">Before </span><i>BeforeAfter.GlobalTestSetup(Scenario)</i><span class="step-duration"></span></div><div class="passed"><span class="step-keyword">Before </span><i>NewSearchTest.Setup(Scenario)</i><span class="step-duration"></span></div>
+    <div class="passed"><span class="element-keyword">Scenario Outline: </span><span class="element-name">Search on author --Positive Scenario</span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">The User is logged in</span><span class="step-duration">000ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">User selects Authors from search criterion picklist and enters &quot;Mayur&quot;</span><span class="step-duration">02s 604ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">clicks on search</span><span class="step-duration">754ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">System responds with results of &quot;Mayur&quot;</span><span class="step-duration">02s 060ms</span></div>
+      
+            <div><div class="output_message">Finished Scenario</div></div>
+      <div></div>
+        <div class="passed"><span class="step-keyword">After </span><i>BeforeAfter.GlobalTestTearDown(Scenario)</i><span class="step-duration"></span></div><div class="passed"><span class="step-keyword">After </span><i>NewSearchTest.teardown(Scenario)</i><span class="step-duration"></span></div>
+    <br>
+      <a href="NewSearchTest-feature.html">View Feature File</a>
+    <div class="feature-tags"><a href="Positive.html">@Positive</a>, <a href="Search.html">@Search</a>, <a href="All.html">@All</a></div>
+    <div class="passed"><span class="step-keyword">Before </span><i>BeforeAfter.GlobalTestSetup(Scenario)</i><span class="step-duration"></span></div><div class="passed"><span class="step-keyword">Before </span><i>NewSearchTest.Setup(Scenario)</i><span class="step-duration"></span></div>
+    <div class="passed"><span class="element-keyword">Scenario Outline: </span><span class="element-name">Search on author with WildCard --Positive Scenario</span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">The User is logged in</span><span class="step-duration">000ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">User selects Authors from search criterion picklist and enters &quot;*&quot;</span><span class="step-duration">02s 575ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">clicks on search</span><span class="step-duration">01s 107ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">System responds with results of all &quot;*&quot;</span><span class="step-duration">02s 064ms</span></div>
+      
+            <div><div class="output_message">Finished Scenario</div></div>
+      <div></div>
+        <div class="passed"><span class="step-keyword">After </span><i>BeforeAfter.GlobalTestTearDown(Scenario)</i><span class="step-duration"></span></div><div class="passed"><span class="step-keyword">After </span><i>NewSearchTest.teardown(Scenario)</i><span class="step-duration"></span></div>
+    <br>
+      <a href="NewSearchTest-feature.html">View Feature File</a>
+    <div class="feature-tags"><a href="Search.html">@Search</a>, <a href="Negative.html">@Negative</a>, <a href="All.html">@All</a></div>
+    <div class="passed"><span class="step-keyword">Before </span><i>BeforeAfter.GlobalTestSetup(Scenario)</i><span class="step-duration"></span></div><div class="passed"><span class="step-keyword">Before </span><i>NewSearchTest.Setup(Scenario)</i><span class="step-duration"></span></div>
+    <div class="passed"><span class="element-keyword">Scenario Outline: </span><span class="element-name">Search on References fails--Negative Scenario</span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">The User is logged in</span><span class="step-duration">000ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">User selects References from search criterion picklist and enters &quot;&quot;</span><span class="step-duration">02s 613ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">clicks on search</span><span class="step-duration">251ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">System responds with callout from search box reading Please fill out this field</span><span class="step-duration">039ms</span></div>
+      
+            <div><div class="output_message">Finished Scenario</div></div>
+      <div></div>
+        <div class="passed"><span class="step-keyword">After </span><i>BeforeAfter.GlobalTestTearDown(Scenario)</i><span class="step-duration"></span></div><div class="passed"><span class="step-keyword">After </span><i>NewSearchTest.teardown(Scenario)</i><span class="step-duration"></span></div>
+    <br>
+      <a href="NewSearchTest-feature.html">View Feature File</a>
+    <div class="feature-tags"><a href="Positive.html">@Positive</a>, <a href="Search.html">@Search</a>, <a href="All.html">@All</a></div>
+    <div class="passed"><span class="step-keyword">Before </span><i>BeforeAfter.GlobalTestSetup(Scenario)</i><span class="step-duration"></span></div><div class="passed"><span class="step-keyword">Before </span><i>NewSearchTest.Setup(Scenario)</i><span class="step-duration"></span></div>
+    <div class="passed"><span class="element-keyword">Scenario Outline: </span><span class="element-name">Search on References --Positive Scenario</span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">The User is logged in</span><span class="step-duration">000ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">User selects References from search criterion picklist and enters &quot;Mayur&quot;</span><span class="step-duration">02s 525ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">clicks on search</span><span class="step-duration">507ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">System responds with results of &quot;Mayur&quot;</span><span class="step-duration">02s 064ms</span></div>
+      
+            <div><div class="output_message">Finished Scenario</div></div>
+      <div></div>
+        <div class="passed"><span class="step-keyword">After </span><i>BeforeAfter.GlobalTestTearDown(Scenario)</i><span class="step-duration"></span></div><div class="passed"><span class="step-keyword">After </span><i>NewSearchTest.teardown(Scenario)</i><span class="step-duration"></span></div>
+    <br>
+      <a href="NewSearchTest-feature.html">View Feature File</a>
+    <div class="feature-tags"><a href="Positive.html">@Positive</a>, <a href="Search.html">@Search</a>, <a href="All.html">@All</a></div>
+    <div class="passed"><span class="step-keyword">Before </span><i>BeforeAfter.GlobalTestSetup(Scenario)</i><span class="step-duration"></span></div><div class="passed"><span class="step-keyword">Before </span><i>NewSearchTest.Setup(Scenario)</i><span class="step-duration"></span></div>
+    <div class="failed"><span class="element-keyword">Scenario Outline: </span><span class="element-name">Search on References with WildCard --Positive Scenario</span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">The User is logged in</span><span class="step-duration">000ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">User selects References from search criterion picklist and enters &quot;*&quot;</span><span class="step-duration">02s 517ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">clicks on search</span><span class="step-duration">615ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="failed"><span class="step-keyword">Then  </span><span class="step-name">System responds with results of all &quot;*&quot;</span><span class="step-duration">02s 086ms</span><div class="output_message"><input class="output_collapse" id="output_976782276" type="checkbox"><label for="output_976782276">java.lang.AssertionError</label><div>	at org.junit.Assert.fail(Assert.java:86)<br/>	at org.junit.Assert.assertTrue(Assert.java:41)<br/>	at org.junit.Assert.assertFalse(Assert.java:64)<br/>	at org.junit.Assert.assertFalse(Assert.java:74)<br/>	at com.cucmber.BNTiEditor.NewSearchTest.system_responds_with_results_of_all(NewSearchTest.java:115)<br/>	at ✽.Then System responds with results of all "*"(NewSearchTest.feature:61)<br/></div></div></div>
+      
+            <div><div class="output_message">Finished Scenario</div></div>
+      <div><a onclick="attachment=document.getElementById('embedding-294817977'); attachment.className = (attachment.className == 'hidden' ? 'visible' : 'hidden'); return false" href="#">Attachment 1 (image)</a><a href="data:image/png;base64,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AJDIsAoAAAAAkMiwCgAAAACQyLAKAAAAAJDIsAoAAAAAkMiwCgAAAACQyLAKAAAAAJDIsAoAAAAAkOD+/fuGVQAAAACAFIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAA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"><img id="embedding-294817977" src="data:image/png;base64,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AJDIsAoAAAAAkMiwCgAAAACQyLAKAAAAAJDIsAoAAAAAkMiwCgAAAACQyLAKAAAAAJDIsAoAAAAAkOD+/fuGVQAAAACAFIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAAgESGVQAAAACARIZVAAAAAIBEhlUAAAAA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" class="hidden"/></a></br><br></div>
+        <div class="passed"><span class="step-keyword">After </span><i>BeforeAfter.GlobalTestTearDown(Scenario)</i><span class="step-duration"></span></div><div class="passed"><span class="step-keyword">After </span><i>NewSearchTest.teardown(Scenario)</i><span class="step-duration"></span></div>
+    <br>
+      <a href="NewSearchTest-feature.html">View Feature File</a>
+    <div class="feature-tags"><a href="Search.html">@Search</a>, <a href="Negative.html">@Negative</a>, <a href="All.html">@All</a></div>
+    <div class="passed"><span class="step-keyword">Before </span><i>BeforeAfter.GlobalTestSetup(Scenario)</i><span class="step-duration"></span></div><div class="passed"><span class="step-keyword">Before </span><i>NewSearchTest.Setup(Scenario)</i><span class="step-duration"></span></div>
+    <div class="passed"><span class="element-keyword">Scenario Outline: </span><span class="element-name">Search on Names fails--Negative Scenario</span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">The User is logged in</span><span class="step-duration">000ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">User selects Names from search criterion picklist and enters &quot;&quot;</span><span class="step-duration">02s 575ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">clicks on search</span><span class="step-duration">269ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">System responds with callout from search box reading Please fill out this field</span><span class="step-duration">040ms</span></div>
+      
+            <div><div class="output_message">Finished Scenario</div></div>
+      <div></div>
+        <div class="passed"><span class="step-keyword">After </span><i>BeforeAfter.GlobalTestTearDown(Scenario)</i><span class="step-duration"></span></div><div class="passed"><span class="step-keyword">After </span><i>NewSearchTest.teardown(Scenario)</i><span class="step-duration"></span></div>
+    <br>
+      <a href="NewSearchTest-feature.html">View Feature File</a>
+    <div class="feature-tags"><a href="Positive.html">@Positive</a>, <a href="Search.html">@Search</a>, <a href="All.html">@All</a></div>
+    <div class="passed"><span class="step-keyword">Before </span><i>BeforeAfter.GlobalTestSetup(Scenario)</i><span class="step-duration"></span></div><div class="passed"><span class="step-keyword">Before </span><i>NewSearchTest.Setup(Scenario)</i><span class="step-duration"></span></div>
+    <div class="passed"><span class="element-keyword">Scenario Outline: </span><span class="element-name">Search on Names --Positive Scenario</span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">The User is logged in</span><span class="step-duration">000ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">User selects Names from search criterion picklist and enters &quot;Mayur&quot;</span><span class="step-duration">02s 532ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">clicks on search</span><span class="step-duration">865ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">System responds with results of &quot;Mayur&quot;</span><span class="step-duration">02s 029ms</span></div>
+      
+            <div><div class="output_message">Finished Scenario</div></div>
+      <div></div>
+        <div class="passed"><span class="step-keyword">After </span><i>BeforeAfter.GlobalTestTearDown(Scenario)</i><span class="step-duration"></span></div><div class="passed"><span class="step-keyword">After </span><i>NewSearchTest.teardown(Scenario)</i><span class="step-duration"></span></div>
+    <br>
+      <a href="NewSearchTest-feature.html">View Feature File</a>
+    <div class="feature-tags"><a href="Positive.html">@Positive</a>, <a href="Search.html">@Search</a>, <a href="All.html">@All</a></div>
+    <div class="passed"><span class="step-keyword">Before </span><i>BeforeAfter.GlobalTestSetup(Scenario)</i><span class="step-duration"></span></div><div class="passed"><span class="step-keyword">Before </span><i>NewSearchTest.Setup(Scenario)</i><span class="step-duration"></span></div>
+    <div class="passed"><span class="element-keyword">Scenario Outline: </span><span class="element-name">Search on Names with WildCard --Positive Scenario</span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">The User is logged in</span><span class="step-duration">000ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">User selects Names from search criterion picklist and enters &quot;*&quot;</span><span class="step-duration">02s 558ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">clicks on search</span><span class="step-duration">01s 162ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">System responds with results of all &quot;*&quot;</span><span class="step-duration">02s 098ms</span></div>
+      
+            <div><div class="output_message">Finished Scenario</div></div>
+      <div></div>
+        <div class="passed"><span class="step-keyword">After </span><i>BeforeAfter.GlobalTestTearDown(Scenario)</i><span class="step-duration"></span></div><div class="passed"><span class="step-keyword">After </span><i>NewSearchTest.teardown(Scenario)</i><span class="step-duration"></span></div>
+    <br>
+  </div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+      <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+      <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Cucumber-JVM Reports</a>
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

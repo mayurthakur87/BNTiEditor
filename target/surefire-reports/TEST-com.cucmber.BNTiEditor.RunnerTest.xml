@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.cucmber.BNTiEditor.RunnerTest" time="720.905" tests="110" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin"/>
+    <property name="java.vm.version" value="25.161-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Mayur\eclipse-workspace\BNTiEditor"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="AU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Mayur\eclipse-workspace\BNTiEditor"/>
+    <property name="java.runtime.version" value="1.8.0_161-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Mayur\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="classworlds.conf" value="C:\Users\Mayur\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3369924814574869875.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\iis express\PHP\v5.6;C:\app\Mayur\product\11.2.0\dbhome_1\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Acer\Remote Files\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Western Digital\WD Boost\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\;C:\Program Files\MySQL\MySQL Server 5.1\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\apache-ant-1.10.1\bin;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\apache-maven-3.5.3\bin;C:\Program Files\Git\cmd;C:\Users\Mayur\Desktop;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.3"/>
+    <property name="user.home" value="C:\Users\Mayur"/>
+    <property name="user.timezone" value="Australia/Sydney"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Mayur"/>
+    <property name="java.class.path" value="C:\Users\Mayur\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.8.3.20180227-2135\jars\plexus-classworlds-2.5.2.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="debug"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_161\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -X -e clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_161"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_161\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\Mayur\eclipse-workspace\BNTiEditor\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="Given User selects NXL Editor from New Scientific Name screen" classname="Scenario: Clear Editor on Results Page--Positive Scenario" time="0.008"/>
+  <testcase name="Then System clears out" classname="Scenario: Clear Editor on Results Page--Positive Scenario" time="0"/>
+  <testcase name="Scenario: Clear Editor on Results Page--Positive Scenario" classname="Scenario: Clear Editor on Results Page--Positive Scenario" time="0.403"/>
+  <testcase name="Given when I open browser" classname="| jamie | password |" time="0"/>
+  <testcase name="When put in &quot;jamie&quot; and &quot;password&quot;" classname="| jamie | password |" time="0"/>
+  <testcase name="Then I should be able to login" classname="| jamie | password |" time="0"/>
+  <testcase name="| jamie | password |" classname="| jamie | password |" time="0.214"/>
+  <testcase name="Given when I open browser" classname="| Jamie | password |" time="0"/>
+  <testcase name="When put in &quot;Jamie&quot; and &quot;password&quot;" classname="| Jamie | password |" time="0"/>
+  <testcase name="Then I should not be able to login" classname="| Jamie | password |" time="0.072">
+    <failure message="FAIL" type="java.lang.AssertionError">java.lang.AssertionError: FAIL
+</failure>
+  </testcase>
+  <testcase name="| Jamie | password |" classname="| Jamie | password |" time="0.072">
+    <failure message="FAIL" type="java.lang.AssertionError">java.lang.AssertionError: FAIL
+</failure>
+  </testcase>
+  <testcase name="Given when I open browser" classname="| jamie | Password |" time="0"/>
+  <testcase name="When put in &quot;jamie&quot; and &quot;Password&quot;" classname="| jamie | Password |" time="0"/>
+  <testcase name="Then I should not be able to login" classname="| jamie | Password |" time="0"/>
+  <testcase name="| jamie | Password |" classname="| jamie | Password |" time="0.21"/>
+  <testcase name="Given when I open browser" classname="| Jamie | Password |" time="0"/>
+  <testcase name="When put in &quot;Jamie&quot; and &quot;Password&quot;" classname="| Jamie | Password |" time="0"/>
+  <testcase name="Then I should not be able to login" classname="| Jamie | Password |" time="0"/>
+  <testcase name="| Jamie | Password |" classname="| Jamie | Password |" time="0.147"/>
+  <testcase name="Given when I open browser" classname="| Mayur | Thakur |" time="0"/>
+  <testcase name="When put in &quot;Mayur&quot; and &quot;Thakur&quot;" classname="| Mayur | Thakur |" time="0"/>
+  <testcase name="Then I should not be able to login" classname="| Mayur | Thakur |" time="0"/>
+  <testcase name="| Mayur | Thakur |" classname="| Mayur | Thakur |" time="0.544"/>
+  <testcase name="Given when I open browser" classname="| Jamie |  |" time="0"/>
+  <testcase name="When put in &quot;Jamie&quot; and &quot;&quot;" classname="| Jamie |  |" time="0"/>
+  <testcase name="Then I should not be able to login" classname="| Jamie |  |" time="0"/>
+  <testcase name="| Jamie |  |" classname="| Jamie |  |" time="0.116"/>
+  <testcase name="Given when I open browser" classname="|  | password |" time="0"/>
+  <testcase name="When put in &quot;&quot; and &quot;password&quot;" classname="|  | password |" time="0"/>
+  <testcase name="Then I should not be able to login" classname="|  | password |" time="0"/>
+  <testcase name="|  | password |" classname="|  | password |" time="0.437"/>
+  <testcase name="Given when I open browser" classname="| * | * |" time="0"/>
+  <testcase name="When put in &quot;*&quot; and &quot;*&quot;" classname="| * | * |" time="0.001"/>
+  <testcase name="Then I should not be able to login" classname="| * | * |" time="0"/>
+  <testcase name="| * | * |" classname="| * | * |" time="0.666"/>
+  <testcase name="Given The values &quot;Mayur  Thakur&quot;, &quot;MT21&quot;" classname="| Mayur  Thakur | MT21 |" time="0"/>
+  <testcase name="When I click on save author" classname="| Mayur  Thakur | MT21 |" time="0"/>
+  <testcase name="Then Author &quot;MT21&quot; is added to the database" classname="| Mayur  Thakur | MT21 |" time="0"/>
+  <testcase name="| Mayur  Thakur | MT21 |" classname="| Mayur  Thakur | MT21 |" time="0.347"/>
+  <testcase name="Given Searching  a  new Reference test with &quot;Acacia mayur1&quot;" classname="| Acacia mayur1 | Mayur | autonym | 19 |" time="0"/>
+  <testcase name="And The values	&quot;Mayur&quot;,&quot;autonym&quot;,&quot;19&quot;" classname="| Acacia mayur1 | Mayur | autonym | 19 |" time="0"/>
+  <testcase name="When I click on create instance" classname="| Acacia mayur1 | Mayur | autonym | 19 |" time="0"/>
+  <testcase name="Then Instance is created" classname="| Acacia mayur1 | Mayur | autonym | 19 |" time="0"/>
+  <testcase name="And Show instances for name button is displayed" classname="| Acacia mayur1 | Mayur | autonym | 19 |" time="0"/>
+  <testcase name="| Acacia mayur1 | Mayur | autonym | 19 |" classname="| Acacia mayur1 | Mayur | autonym | 19 |" time="0.384"/>
+  <testcase name="Given The values &quot;common&quot;,&quot;[n/a]&quot;,&quot;MAYURTEST30&quot;" classname="| common | [n/a] | MAYURTEST30 |" time="0"/>
+  <testcase name="When I click on save Other Name" classname="| common | [n/a] | MAYURTEST30 |" time="0"/>
+  <testcase name="Then Other &quot;MAYURTEST30&quot; is added to database" classname="| common | [n/a] | MAYURTEST30 |" time="0"/>
+  <testcase name="| common | [n/a] | MAYURTEST30 |" classname="| common | [n/a] | MAYURTEST30 |" time="0.489"/>
+  <testcase name="Given The values at &quot;phrase name&quot;, &quot;Subtribus&quot;, &quot;[n/a]&quot;, &quot;Acanthaceae&quot;, &quot;my4&quot;, &quot;mo&quot;" classname="| phrase name | Subtribus | [n/a] | Acanthaceae | my4 | mo |" time="0"/>
+  <testcase name="When I click on save phrase Name" classname="| phrase name | Subtribus | [n/a] | Acanthaceae | my4 | mo |" time="0.001"/>
+  <testcase name="Then Phrase &quot;my4&quot; is added to database" classname="| phrase name | Subtribus | [n/a] | Acanthaceae | my4 | mo |" time="0"/>
+  <testcase name="| phrase name | Subtribus | [n/a] | Acanthaceae | my4 | mo |" classname="| phrase name | Subtribus | [n/a] | Acanthaceae | my4 | mo |" time="0.169"/>
+  <testcase name="Given The values &quot;Book&quot;, &quot;Mayur12&quot;,&quot;Yes&quot;,&quot;Author&quot;,&quot;Author&quot;" classname="| Book | Mayur12 | Yes | Dombrain | Author |" time="0"/>
+  <testcase name="When I click on save reference" classname="| Book | Mayur12 | Yes | Dombrain | Author |" time="0"/>
+  <testcase name="Then Reference  &quot;Mayur12&quot; is added to the database" classname="| Book | Mayur12 | Yes | Dombrain | Author |" time="0"/>
+  <testcase name="| Book | Mayur12 | Yes | Dombrain | Author |" classname="| Book | Mayur12 | Yes | Dombrain | Author |" time="0.303"/>
+  <testcase name="Given The values &quot;Book&quot;, &quot;Mayur14&quot;,&quot;No&quot;,&quot;Author&quot;,&quot;Unknown&quot;" classname="| Book | Mayur14 | No | Dombrain | Unknown |" time="0"/>
+  <testcase name="When I click on save reference" classname="| Book | Mayur14 | No | Dombrain | Unknown |" time="0"/>
+  <testcase name="Then Reference  &quot;Mayur14&quot; is added to the database" classname="| Book | Mayur14 | No | Dombrain | Unknown |" time="0"/>
+  <testcase name="| Book | Mayur14 | No | Dombrain | Unknown |" classname="| Book | Mayur14 | No | Dombrain | Unknown |" time="0.697"/>
+  <testcase name="Given The values &quot;autonym&quot;,&quot;Regio&quot;, &quot;legitimate&quot;, &quot;acacia&quot;, &quot;testparent2&quot;, &quot;Doepel&quot;" classname="| autonym | Regio | legitimate | acacia | testparent2 | Doepel |" time="0"/>
+  <testcase name="When I click on save" classname="| autonym | Regio | legitimate | acacia | testparent2 | Doepel |" time="0"/>
+  <testcase name="Then New Scientific Name is &quot;testparent2&quot; is added to database" classname="| autonym | Regio | legitimate | acacia | testparent2 | Doepel |" time="0.007"/>
+  <testcase name="| autonym | Regio | legitimate | acacia | testparent2 | Doepel |" classname="| autonym | Regio | legitimate | acacia | testparent2 | Doepel |" time="0.195"/>
+  <testcase name="Given The User is logged in" classname="|  |" time="0.001"/>
+  <testcase name="Given The User is logged in" classname="|  |" time="0"/>
+  <testcase name="Given The User is logged in" classname="|  |" time="0"/>
+  <testcase name="When User selects Authors from search criterion picklist and enters &quot;&quot;" classname="|  |" time="0"/>
+  <testcase name="And clicks on search" classname="|  |" time="0"/>
+  <testcase name="And clicks on search" classname="|  |" time="0"/>
+  <testcase name="And clicks on search" classname="|  |" time="0"/>
+  <testcase name="Then System responds with callout from search box reading Please fill out this field" classname="|  |" time="0"/>
+  <testcase name="Then System responds with callout from search box reading Please fill out this field" classname="|  |" time="0"/>
+  <testcase name="Then System responds with callout from search box reading Please fill out this field" classname="|  |" time="0"/>
+  <testcase name="|  |" classname="|  |" time="0.272"/>
+  <testcase name="|  |" classname="|  |" time="0.128"/>
+  <testcase name="|  |" classname="|  |" time="0.428"/>
+  <testcase name="Given The User is logged in" classname="| Mayur |" time="0"/>
+  <testcase name="Given The User is logged in" classname="| Mayur |" time="0"/>
+  <testcase name="Given The User is logged in" classname="| Mayur |" time="0"/>
+  <testcase name="When User selects Authors from search criterion picklist and enters &quot;Mayur&quot;" classname="| Mayur |" time="0"/>
+  <testcase name="And clicks on search" classname="| Mayur |" time="0"/>
+  <testcase name="And clicks on search" classname="| Mayur |" time="0"/>
+  <testcase name="And clicks on search" classname="| Mayur |" time="0"/>
+  <testcase name="Then System responds with results of &quot;Mayur&quot;" classname="| Mayur |" time="0"/>
+  <testcase name="Then System responds with results of &quot;Mayur&quot;" classname="| Mayur |" time="0"/>
+  <testcase name="Then System responds with results of &quot;Mayur&quot;" classname="| Mayur |" time="0"/>
+  <testcase name="| Mayur |" classname="| Mayur |" time="0.655"/>
+  <testcase name="| Mayur |" classname="| Mayur |" time="0.301"/>
+  <testcase name="| Mayur |" classname="| Mayur |" time="1.294"/>
+  <testcase name="Given The User is logged in" classname="| * |" time="0.001"/>
+  <testcase name="Given The User is logged in" classname="| * |" time="0"/>
+  <testcase name="Given The User is logged in" classname="| * |" time="0"/>
+  <testcase name="When User selects Authors from search criterion picklist and enters &quot;*&quot;" classname="| * |" time="0"/>
+  <testcase name="And clicks on search" classname="| * |" time="0"/>
+  <testcase name="And clicks on search" classname="| * |" time="0"/>
+  <testcase name="And clicks on search" classname="| * |" time="0"/>
+  <testcase name="Then System responds with results of all &quot;*&quot;" classname="| * |" time="0"/>
+  <testcase name="Then System responds with results of all &quot;*&quot;" classname="| * |" time="0.001">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+</failure>
+    <system-out><![CDATA[testname     Common/Cultivars  |  No records found.   |   References "*"
+resulttrue
+]]></system-out>
+  </testcase>
+  <testcase name="Then System responds with results of all &quot;*&quot;" classname="| * |" time="0"/>
+  <testcase name="| * |" classname="| * |" time="0.446"/>
+  <testcase name="| * |" classname="| * |" time="0.001">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+</failure>
+  </testcase>
+  <testcase name="| * |" classname="| * |" time="0.234"/>
+  <testcase name="When User selects References from search criterion picklist and enters &quot;&quot;" classname="|  |" time="0"/>
+  <testcase name="When User selects References from search criterion picklist and enters &quot;Mayur&quot;" classname="| Mayur |" time="0"/>
+  <testcase name="When User selects References from search criterion picklist and enters &quot;*&quot;" classname="| * |" time="0"/>
+  <testcase name="When User selects Names from search criterion picklist and enters &quot;&quot;" classname="|  |" time="0"/>
+  <testcase name="When User selects Names from search criterion picklist and enters &quot;Mayur&quot;" classname="| Mayur |" time="0"/>
+  <testcase name="When User selects Names from search criterion picklist and enters &quot;*&quot;" classname="| * |" time="0"/>
+</testsuite>

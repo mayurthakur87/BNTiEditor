@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.cucmber.BNTiEditor.RunnerTest
+-------------------------------------------------------------------------------
+Tests run: 110, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 720.905 sec <<< FAILURE! - in com.cucmber.BNTiEditor.RunnerTest
+Then I should not be able to login(| Jamie | password |)  Time elapsed: 0.072 sec  <<< FAILURE!
+java.lang.AssertionError: FAIL
+
+| Jamie | password |  Time elapsed: 0.072 sec  <<< FAILURE!
+java.lang.AssertionError: FAIL
+
+Then System responds with results of all "*"(| * |)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError
+
+| * |  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError
+

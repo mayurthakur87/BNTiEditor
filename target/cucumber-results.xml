@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="25" time="718.188399">
+<testcase classname="Clear Editor" name="Clear Editor on Results Page--Positive Scenario" time="55.956372">
+<system-out><![CDATA[Given User selects NXL Editor from New Scientific Name screen...............passed
+Then System clears out......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login feature" name="open browser and login-- positive scenario" time="27.141548">
+<system-out><![CDATA[Given when I open browser...................................................passed
+When put in "jamie" and "password"..........................................passed
+Then I should be able to login..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login feature" name="open browser and login-- Negative scenario" time="28.158447">
+<failure message="java.lang.AssertionError: FAIL&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:64)&#13;&#10;&#9;at com.cucmber.BNTiEditor.LoginNxlEditorTest.i_should_not_be_able_to_login(LoginNxlEditorTest.java:58)&#13;&#10;&#9;at ✽.Then I should not be able to login(LoginNxlEditorTest.feature:18)&#13;&#10;"><![CDATA[Given when I open browser...................................................passed
+When put in "Jamie" and "password"..........................................passed
+Then I should not be able to login..........................................failed
+
+StackTrace:
+java.lang.AssertionError: FAIL
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertFalse(Assert.java:64)
+	at com.cucmber.BNTiEditor.LoginNxlEditorTest.i_should_not_be_able_to_login(LoginNxlEditorTest.java:58)
+	at ✽.Then I should not be able to login(LoginNxlEditorTest.feature:18)
+]]></failure>
+</testcase>
+<testcase classname="Login feature" name="open browser and login-- Negative scenario 2" time="24.090824">
+<system-out><![CDATA[Given when I open browser...................................................passed
+When put in "jamie" and "Password"..........................................passed
+Then I should not be able to login..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login feature" name="open browser and login-- Negative scenario 3" time="21.658392">
+<system-out><![CDATA[Given when I open browser...................................................passed
+When put in "Jamie" and "Password"..........................................passed
+Then I should not be able to login..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login feature" name="open browser and login-- Negative scenario 4" time="23.67898">
+<system-out><![CDATA[Given when I open browser...................................................passed
+When put in "Mayur" and "Thakur"............................................passed
+Then I should not be able to login..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login feature" name="open browser and login-- Negative scenario 5" time="19.579893">
+<system-out><![CDATA[Given when I open browser...................................................passed
+When put in "Jamie" and ""..................................................passed
+Then I should not be able to login..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login feature" name="open browser and login-- Negative scenario 6" time="22.923219">
+<system-out><![CDATA[Given when I open browser...................................................passed
+When put in "" and "password"...............................................passed
+Then I should not be able to login..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login feature" name="open browser and login-- Negative scenario 7" time="27.145641">
+<system-out><![CDATA[Given when I open browser...................................................passed
+When put in "*" and "*".....................................................passed
+Then I should not be able to login..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="New Author" name="Successfully add an Author--positive scenario" time="28.419169">
+<system-out><![CDATA[Given The values "Mayur  Thakur", "MT21"....................................passed
+When I click on save author.................................................passed
+Then Author "MT21" is added to the database.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="New instance" name="Successfully add a New instance name--Positive scenario" time="29.520719">
+<system-out><![CDATA[Given Searching  a  new Reference test with "Acacia mayur1".................passed
+And The values	"Mayur","autonym","19".......................................passed
+When I click on create instance.............................................passed
+Then Instance is created....................................................passed
+And Show instances for name button is displayed.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="New Other name" name="Successfully add other name--Positive scenario" time="31.288912">
+<system-out><![CDATA[Given The values "common","[n/a]","MAYURTEST30".............................passed
+When I click on save Other Name.............................................passed
+Then Other "MAYURTEST30" is added to database...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="New Phrase name" name="Successfully add phrase name--Positive scenario" time="32.554223">
+<system-out><![CDATA[Given The values at "phrase name", "Subtribus", "[n/a]", "Acanthaceae", "my4", "mo".passed
+When I click on save phrase Name............................................passed
+Then Phrase "my4" is added to database......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="New Reference" name="Successfully add a new  Reference--Positive scenario" time="37.167062">
+<system-out><![CDATA[Given The values "Book", "Mayur12","Yes","Author","Author"..................passed
+When I click on save reference..............................................passed
+Then Reference  "Mayur12" is added to the database..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="New Reference" name="Successfully add a new  Reference--Positive scenario 2" time="33.148388">
+<system-out><![CDATA[Given The values "Book", "Mayur14","No","Author","Unknown"..................passed
+When I click on save reference..............................................passed
+Then Reference  "Mayur14" is added to the database..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Add New Scientific Name" name="Successfully add new name--positive scenario" time="34.362952">
+<system-out><![CDATA[Given The values "autonym","Regio", "legitimate", "acacia", "testparent2", "Doepel".passed
+When I click on save........................................................passed
+Then New Scientific Name is "testparent2" is added to database..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Search on authors" name="Search on author fails--Negative Scenario" time="28.279684">
+<system-out><![CDATA[Given The User is logged in.................................................passed
+When User selects Authors from search criterion picklist and enters ""......passed
+And clicks on search........................................................passed
+Then System responds with callout from search box reading Please fill out this field.passed
+]]></system-out>
+</testcase>
+<testcase classname="Search on authors" name="Search on author --Positive Scenario" time="25.618703">
+<system-out><![CDATA[Given The User is logged in.................................................passed
+When User selects Authors from search criterion picklist and enters "Mayur".passed
+And clicks on search........................................................passed
+Then System responds with results of "Mayur"................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search on authors" name="Search on author with WildCard --Positive Scenario" time="28.912238">
+<system-out><![CDATA[Given The User is logged in.................................................passed
+When User selects Authors from search criterion picklist and enters "*".....passed
+And clicks on search........................................................passed
+Then System responds with results of all "*"................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search on authors" name="Search on References fails--Negative Scenario" time="23.236413">
+<system-out><![CDATA[Given The User is logged in.................................................passed
+When User selects References from search criterion picklist and enters ""...passed
+And clicks on search........................................................passed
+Then System responds with callout from search box reading Please fill out this field.passed
+]]></system-out>
+</testcase>
+<testcase classname="Search on authors" name="Search on References --Positive Scenario" time="30.788083">
+<system-out><![CDATA[Given The User is logged in.................................................passed
+When User selects References from search criterion picklist and enters "Mayur".passed
+And clicks on search........................................................passed
+Then System responds with results of "Mayur"................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search on authors" name="Search on References with WildCard --Positive Scenario" time="27.596294">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:64)&#13;&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:74)&#13;&#10;&#9;at com.cucmber.BNTiEditor.NewSearchTest.system_responds_with_results_of_all(NewSearchTest.java:115)&#13;&#10;&#9;at ✽.Then System responds with results of all &quot;*&quot;(NewSearchTest.feature:61)&#13;&#10;"><![CDATA[Given The User is logged in.................................................passed
+When User selects References from search criterion picklist and enters "*"..passed
+And clicks on search........................................................passed
+Then System responds with results of all "*"................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertFalse(Assert.java:64)
+	at org.junit.Assert.assertFalse(Assert.java:74)
+	at com.cucmber.BNTiEditor.NewSearchTest.system_responds_with_results_of_all(NewSearchTest.java:115)
+	at ✽.Then System responds with results of all "*"(NewSearchTest.feature:61)
+]]></failure>
+</testcase>
+<testcase classname="Search on authors" name="Search on Names fails--Negative Scenario" time="22.16274">
+<system-out><![CDATA[Given The User is logged in.................................................passed
+When User selects Names from search criterion picklist and enters ""........passed
+And clicks on search........................................................passed
+Then System responds with callout from search box reading Please fill out this field.passed
+]]></system-out>
+</testcase>
+<testcase classname="Search on authors" name="Search on Names --Positive Scenario" time="27.76021">
+<system-out><![CDATA[Given The User is logged in.................................................passed
+When User selects Names from search criterion picklist and enters "Mayur"...passed
+And clicks on search........................................................passed
+Then System responds with results of "Mayur"................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search on authors" name="Search on Names with WildCard --Positive Scenario" time="27.039293">
+<system-out><![CDATA[Given The User is logged in.................................................passed
+When User selects Names from search criterion picklist and enters "*".......passed
+And clicks on search........................................................passed
+Then System responds with results of all "*"................................passed
+]]></system-out>
+</testcase>
+</testsuite>

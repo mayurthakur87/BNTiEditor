@@ -1,0 +1,365 @@
+@All @Clear
+Feature: Clear Editor
+[34mFinished Scenario[0m
+
+  @Positive
+  Scenario: Clear Editor on Results Page--Positive Scenario       [90m# ClearEditorTest.feature:5[0m
+    [32mGiven [0m[32mUser selects NXL Editor from New Scientific Name screen[0m [90m# ClearEditorTest.user_selects_NXL_Editor_from_New_Scientific_Name_screen()[0m
+    [32mThen [0m[32mSystem clears out[0m                                        [90m# ClearEditorTest.system_clears_out()[0m
+@All @Login
+Feature: Login feature
+
+  @Positive
+  Scenario Outline: open browser and login-- positive scenario [90m# LoginNxlEditorTest.feature:5[0m
+    [36mGiven [0m[36mwhen I open browser[0m
+    [36mWhen [0m[36mput in "<username>" and "<password>"[0m
+    [36mThen [0m[36mI should be able to login[0m
+
+    Examples: 
+[34mFinished Scenario open browser and login-- positive scenario[0m
+
+  @Login @Positive @All
+  Scenario Outline: open browser and login-- positive scenario [90m# LoginNxlEditorTest.feature:12[0m
+    [32mGiven [0m[32mwhen I open browser[0m                                  [90m# LoginNxlEditorTest.when_I_open_browser()[0m
+    [32mWhen [0m[32mput in "[0m[32m[1mjamie[0m[32m" and "[0m[32m[1mpassword[0m[32m"[0m                         [90m# LoginNxlEditorTest.put_in_and(String,String)[0m
+    [32mThen [0m[32mI should be able to login[0m                             [90m# LoginNxlEditorTest.i_should_be_able_to_login()[0m
+
+  @Negative
+  Scenario Outline: open browser and login-- Negative scenario [90m# LoginNxlEditorTest.feature:15[0m
+    [36mGiven [0m[36mwhen I open browser[0m
+    [36mWhen [0m[36mput in "<username>" and "<password>"[0m
+    [36mThen [0m[36mI should not be able to login[0m
+
+    Examples: 
+[34mFinished Scenario open browser and login-- Negative scenario[0m
+
+  @Login @Negative @All
+  Scenario Outline: open browser and login-- Negative scenario [90m# LoginNxlEditorTest.feature:22[0m
+    [32mGiven [0m[32mwhen I open browser[0m                                  [90m# LoginNxlEditorTest.when_I_open_browser()[0m
+    [32mWhen [0m[32mput in "[0m[32m[1mJamie[0m[32m" and "[0m[32m[1mpassword[0m[32m"[0m                         [90m# LoginNxlEditorTest.put_in_and(String,String)[0m
+    [31mThen [0m[31mI should not be able to login[0m                         [90m# LoginNxlEditorTest.i_should_not_be_able_to_login()[0m
+      [31mjava.lang.AssertionError: FAIL
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at org.junit.Assert.assertFalse(Assert.java:64)
+      	at com.cucmber.BNTiEditor.LoginNxlEditorTest.i_should_not_be_able_to_login(LoginNxlEditorTest.java:58)
+      	at ✽.Then I should not be able to login(LoginNxlEditorTest.feature:18)
+      [0m
+[34mFinished Scenario open browser and login-- Negative scenario[0m
+
+  @Login @Negative @All
+  Scenario Outline: open browser and login-- Negative scenario [90m# LoginNxlEditorTest.feature:23[0m
+    [32mGiven [0m[32mwhen I open browser[0m                                  [90m# LoginNxlEditorTest.when_I_open_browser()[0m
+    [32mWhen [0m[32mput in "[0m[32m[1mjamie[0m[32m" and "[0m[32m[1mPassword[0m[32m"[0m                         [90m# LoginNxlEditorTest.put_in_and(String,String)[0m
+    [32mThen [0m[32mI should not be able to login[0m                         [90m# LoginNxlEditorTest.i_should_not_be_able_to_login()[0m
+[34mFinished Scenario open browser and login-- Negative scenario[0m
+
+  @Login @Negative @All
+  Scenario Outline: open browser and login-- Negative scenario [90m# LoginNxlEditorTest.feature:24[0m
+    [32mGiven [0m[32mwhen I open browser[0m                                  [90m# LoginNxlEditorTest.when_I_open_browser()[0m
+    [32mWhen [0m[32mput in "[0m[32m[1mJamie[0m[32m" and "[0m[32m[1mPassword[0m[32m"[0m                         [90m# LoginNxlEditorTest.put_in_and(String,String)[0m
+    [32mThen [0m[32mI should not be able to login[0m                         [90m# LoginNxlEditorTest.i_should_not_be_able_to_login()[0m
+[34mFinished Scenario open browser and login-- Negative scenario[0m
+
+  @Login @Negative @All
+  Scenario Outline: open browser and login-- Negative scenario [90m# LoginNxlEditorTest.feature:25[0m
+    [32mGiven [0m[32mwhen I open browser[0m                                  [90m# LoginNxlEditorTest.when_I_open_browser()[0m
+    [32mWhen [0m[32mput in "[0m[32m[1mMayur[0m[32m" and "[0m[32m[1mThakur[0m[32m"[0m                           [90m# LoginNxlEditorTest.put_in_and(String,String)[0m
+    [32mThen [0m[32mI should not be able to login[0m                         [90m# LoginNxlEditorTest.i_should_not_be_able_to_login()[0m
+[34mFinished Scenario open browser and login-- Negative scenario[0m
+
+  @Login @Negative @All
+  Scenario Outline: open browser and login-- Negative scenario [90m# LoginNxlEditorTest.feature:26[0m
+    [32mGiven [0m[32mwhen I open browser[0m                                  [90m# LoginNxlEditorTest.when_I_open_browser()[0m
+    [32mWhen [0m[32mput in "[0m[32m[1mJamie[0m[32m" and "[0m[32m[1m[0m[32m"[0m                                 [90m# LoginNxlEditorTest.put_in_and(String,String)[0m
+    [32mThen [0m[32mI should not be able to login[0m                         [90m# LoginNxlEditorTest.i_should_not_be_able_to_login()[0m
+[34mFinished Scenario open browser and login-- Negative scenario[0m
+
+  @Login @Negative @All
+  Scenario Outline: open browser and login-- Negative scenario [90m# LoginNxlEditorTest.feature:27[0m
+    [32mGiven [0m[32mwhen I open browser[0m                                  [90m# LoginNxlEditorTest.when_I_open_browser()[0m
+    [32mWhen [0m[32mput in "[0m[32m[1m[0m[32m" and "[0m[32m[1mpassword[0m[32m"[0m                              [90m# LoginNxlEditorTest.put_in_and(String,String)[0m
+    [32mThen [0m[32mI should not be able to login[0m                         [90m# LoginNxlEditorTest.i_should_not_be_able_to_login()[0m
+[34mFinished Scenario open browser and login-- Negative scenario[0m
+
+  @Login @Negative @All
+  Scenario Outline: open browser and login-- Negative scenario [90m# LoginNxlEditorTest.feature:28[0m
+    [32mGiven [0m[32mwhen I open browser[0m                                  [90m# LoginNxlEditorTest.when_I_open_browser()[0m
+    [32mWhen [0m[32mput in "[0m[32m[1m*[0m[32m" and "[0m[32m[1m*[0m[32m"[0m                                    [90m# LoginNxlEditorTest.put_in_and(String,String)[0m
+    [32mThen [0m[32mI should not be able to login[0m                         [90m# LoginNxlEditorTest.i_should_not_be_able_to_login()[0m
+@All @NewAuthor
+Feature: New Author
+
+  @Positive
+  Scenario Outline: Successfully add an Author--positive scenario [90m# NewAuthorTest.feature:5[0m
+    [36mGiven [0m[36mThe values "<Name>", "<Abbreviation>"[0m
+    [36mWhen [0m[36mI click on save author[0m
+    [36mThen [0m[36mAuthor "<Abbreviation>" is added to the database[0m
+
+    Examples: 
+[34mFinished Scenario Successfully add an Author--positive scenario[0m
+
+  @Positive @All @NewAuthor
+  Scenario Outline: Successfully add an Author--positive scenario [90m# NewAuthorTest.feature:12[0m
+    [32mGiven [0m[32mThe values "[0m[32m[1mMayur  Thakur[0m[32m", "[0m[32m[1mMT21[0m[32m"[0m                      [90m# NewAuthorTest.the_values(String,String)[0m
+    [32mWhen [0m[32mI click on save author[0m                                   [90m# NewAuthorTest.i_click_on_save_author()[0m
+    [32mThen [0m[32mAuthor "[0m[32m[1mMT21[0m[32m" is added to the database[0m                   [90m# NewAuthorTest.author_is_added_to_the_database(String)[0m
+@All @NewInstance
+Feature: New instance
+
+  @Positive
+  Scenario Outline: Successfully add a New instance name--Positive scenario [90m# NewInstanceTest.feature:5[0m
+    [36mGiven [0m[36mSearching  a  new Reference test with "<Name>"[0m
+    [36mAnd [0m[36mThe values	"<Reference>","<Type>","<On_Page>"[0m
+    [36mWhen [0m[36mI click on create instance[0m
+    [36mThen [0m[36mInstance is created[0m
+    [36mAnd [0m[36mShow instances for name button is displayed[0m
+
+    Examples: 
+[34mFinished Scenario Successfully add a New instance name--Positive scenario[0m
+
+  @Positive @NewInstance @All
+  Scenario Outline: Successfully add a New instance name--Positive scenario [90m# NewInstanceTest.feature:14[0m
+    [32mGiven [0m[32mSearching  a  new Reference test with "[0m[32m[1mAcacia mayur1[0m[32m"[0m             [90m# NewInstanceTest.searching_a_new_Reference_test_with(String)[0m
+    [32mAnd [0m[32mThe values	"[0m[32m[1mMayur[0m[32m","[0m[32m[1mautonym[0m[32m","[0m[32m[1m19[0m[32m"[0m                                   [90m# NewInstanceTest.the_values(String,String,String)[0m
+    [32mWhen [0m[32mI click on create instance[0m                                         [90m# NewInstanceTest.i_click_on_create_instance()[0m
+    [32mThen [0m[32mInstance is created[0m                                                [90m# NewInstanceTest.instance_is_created()[0m
+    [32mAnd [0m[32mShow instances for name button is displayed[0m                         [90m# NewInstanceTest.show_instances_for_name_button_is_displayed()[0m
+@All @NewOther
+Feature: New Other name
+
+  @Positive
+  Scenario Outline: Successfully add other name--Positive scenario [90m# NewOtherNameTest.feature:5[0m
+    [36mGiven [0m[36mThe values "<Type>","<Status>","<Name>"[0m
+    [36mWhen [0m[36mI click on save Other Name[0m
+    [36mThen [0m[36mOther "<Name>" is added to database[0m
+
+    Examples: 
+[34mFinished Scenario[0m
+
+  @Positive @NewOther @All
+  Scenario Outline: Successfully add other name--Positive scenario [90m# NewOtherNameTest.feature:12[0m
+    [32mGiven [0m[32mThe values "[0m[32m[1mcommon[0m[32m","[0m[32m[1m[n/a][0m[32m","[0m[32m[1mMAYURTEST30[0m[32m"[0m                [90m# NewOtherNameTest.the_values(String,String,String)[0m
+    [32mWhen [0m[32mI click on save Other Name[0m                                [90m# NewOtherNameTest.i_click_on_save_Other_Name()[0m
+    [32mThen [0m[32mOther "[0m[32m[1mMAYURTEST30[0m[32m" is added to database[0m                  [90m# NewOtherNameTest.other_is_added_to_database(String)[0m
+@All @NewPhraseName
+Feature: New Phrase name
+
+  @Positive
+  Scenario Outline: Successfully add phrase name--Positive scenario                       [90m# NewPhraseNameTest.feature:5[0m
+    [36mGiven [0m[36mThe values at "<Type>", "<Rank>", "<Status>", "<Parent>", "<PName>", "<Author>"[0m
+    [36mWhen [0m[36mI click on save phrase Name[0m
+    [36mThen [0m[36mPhrase "<PName>" is added to database[0m
+
+    Examples: 
+[34mFinished Scenario[0m
+
+  @Positive @NewPhraseName @All
+  Scenario Outline: Successfully add phrase name--Positive scenario                     [90m# NewPhraseNameTest.feature:12[0m
+    [32mGiven [0m[32mThe values at "[0m[32m[1mphrase name[0m[32m", "[0m[32m[1mSubtribus[0m[32m", "[0m[32m[1m[n/a][0m[32m", "[0m[32m[1mAcanthaceae[0m[32m", "[0m[32m[1mmy4[0m[32m", "[0m[32m[1mmo[0m[32m"[0m [90m# NewPhraseNameTest.the_values_at(String,String,String,String,String,String)[0m
+    [32mWhen [0m[32mI click on save phrase Name[0m                                                    [90m# NewPhraseNameTest.i_click_on_save_phrase_Name()[0m
+    [32mThen [0m[32mPhrase "[0m[32m[1mmy4[0m[32m" is added to database[0m                                              [90m# NewPhraseNameTest.phrase_is_added_to_database(String)[0m
+@All @NewReference
+Feature: New Reference
+
+  @Positive
+  Scenario Outline: Successfully add a new  Reference--Positive scenario [90m# NewReferenceTest.feature:5[0m
+    [36mGiven [0m[36mThe values "<Type>", "<Title>","<Published>","Author","<Role>"[0m
+    [36mWhen [0m[36mI click on save reference[0m
+    [36mThen [0m[36mReference  "<Title>" is added to the database[0m
+
+    Examples: 
+[34mFinished Scenario[0m
+
+  @Positive @NewReference @All
+  Scenario Outline: Successfully add a new  Reference--Positive scenario [90m# NewReferenceTest.feature:12[0m
+    [32mGiven [0m[32mThe values "[0m[32m[1mBook[0m[32m", "[0m[32m[1mMayur12[0m[32m","[0m[32m[1mYes[0m[32m","[0m[32m[1mAuthor[0m[32m","[0m[32m[1mAuthor[0m[32m"[0m           [90m# NewReferenceTest.the_values(String,String,String,String,String)[0m
+    [32mWhen [0m[32mI click on save reference[0m                                       [90m# NewReferenceTest.i_click_on_save_reference()[0m
+    [32mThen [0m[32mReference  "[0m[32m[1mMayur12[0m[32m" is added to the database[0m                   [90m# NewReferenceTest.reference_is_added_to_the_database(String)[0m
+[34mFinished Scenario[0m
+
+  @Positive @NewReference @All
+  Scenario Outline: Successfully add a new  Reference--Positive scenario [90m# NewReferenceTest.feature:13[0m
+    [32mGiven [0m[32mThe values "[0m[32m[1mBook[0m[32m", "[0m[32m[1mMayur14[0m[32m","[0m[32m[1mNo[0m[32m","[0m[32m[1mAuthor[0m[32m","[0m[32m[1mUnknown[0m[32m"[0m           [90m# NewReferenceTest.the_values(String,String,String,String,String)[0m
+    [32mWhen [0m[32mI click on save reference[0m                                       [90m# NewReferenceTest.i_click_on_save_reference()[0m
+    [32mThen [0m[32mReference  "[0m[32m[1mMayur14[0m[32m" is added to the database[0m                   [90m# NewReferenceTest.reference_is_added_to_the_database(String)[0m
+@All @ScientificName
+Feature: Add New Scientific Name
+
+  @Positive
+  Scenario Outline: Successfully add new name--positive scenario                     [90m# NewScientificNameTest.feature:5[0m
+    [36mGiven [0m[36mThe values "<Type>","<Rank>", "<Status>", "<Parent>", "<Name>", "<Author>"[0m
+    [36mWhen [0m[36mI click on save[0m
+    [36mThen [0m[36mNew Scientific Name is "<Name>" is added to database[0m
+
+    Examples: 
+[34mFinished Scenario[0m
+
+  @Positive @ScientificName @All
+  Scenario Outline: Successfully add new name--positive scenario                        [90m# NewScientificNameTest.feature:12[0m
+    [32mGiven [0m[32mThe values "[0m[32m[1mautonym[0m[32m","[0m[32m[1mRegio[0m[32m", "[0m[32m[1mlegitimate[0m[32m", "[0m[32m[1macacia[0m[32m", "[0m[32m[1mtestparent2[0m[32m", "[0m[32m[1mDoepel[0m[32m"[0m [90m# NewScientificNameTest.the_values(String,String,String,String,String,String)[0m
+    [32mWhen [0m[32mI click on save[0m                                                                [90m# NewScientificNameTest.i_click_on_save()[0m
+    [32mThen [0m[32mNew Scientific Name is "[0m[32m[1mtestparent2[0m[32m" is added to database[0m                      [90m# NewScientificNameTest.new_scientific_name_is_added_to_database(String)[0m
+@All @Search
+Feature: Search on authors
+
+  @Negative
+  Scenario Outline: Search on author fails--Negative Scenario                            [90m# NewSearchTest.feature:4[0m
+    [36mGiven [0m[36mThe User is logged in[0m
+    [36mWhen [0m[36mUser selects Authors from search criterion picklist and enters "<Author_Name>"[0m
+    [36mAnd [0m[36mclicks on search[0m
+    [36mThen [0m[36mSystem responds with callout from search box reading Please fill out this field[0m
+
+    Examples: 
+[34mFinished Scenario[0m
+
+  @Search @Negative @All
+  Scenario Outline: Search on author fails--Negative Scenario                            [90m# NewSearchTest.feature:12[0m
+    [32mGiven [0m[32mThe User is logged in[0m                                                          [90m# NewSearchTest.the_User_is_logged_in()[0m
+    [32mWhen [0m[32mUser selects Authors from search criterion picklist and enters "[0m[32m[1m[0m[32m"[0m               [90m# NewSearchTest.user_selects_Authors_from_search_criterion_picklist_and_enters(String)[0m
+    [32mAnd [0m[32mclicks on search[0m                                                                 [90m# NewSearchTest.clicks_on_search()[0m
+    [32mThen [0m[32mSystem responds with callout from search box reading Please fill out this field[0m [90m# NewSearchTest.system_responds_with_callout_from_search_box_reading_Please_fill_out_this_field()[0m
+
+  @Positive
+  Scenario Outline: Search on author --Positive Scenario                                [90m# NewSearchTest.feature:14[0m
+    [36mGiven [0m[36mThe User is logged in[0m
+    [36mWhen [0m[36mUser selects Authors from search criterion picklist and enters "<Author_Name>"[0m
+    [36mAnd [0m[36mclicks on search[0m
+    [36mThen [0m[36mSystem responds with results of "<Author_Name>"[0m
+
+    Examples: 
+[34mFinished Scenario[0m
+
+  @Positive @Search @All
+  Scenario Outline: Search on author --Positive Scenario                        [90m# NewSearchTest.feature:22[0m
+    [32mGiven [0m[32mThe User is logged in[0m                                                 [90m# NewSearchTest.the_User_is_logged_in()[0m
+    [32mWhen [0m[32mUser selects Authors from search criterion picklist and enters "[0m[32m[1mMayur[0m[32m"[0m [90m# NewSearchTest.user_selects_Authors_from_search_criterion_picklist_and_enters(String)[0m
+    [32mAnd [0m[32mclicks on search[0m                                                        [90m# NewSearchTest.clicks_on_search()[0m
+    [32mThen [0m[32mSystem responds with results of "[0m[32m[1mMayur[0m[32m"[0m                                [90m# NewSearchTest.system_responds_with_results_of(String)[0m
+
+  @Positive
+  Scenario Outline: Search on author with WildCard --Positive Scenario                  [90m# NewSearchTest.feature:25[0m
+    [36mGiven [0m[36mThe User is logged in[0m
+    [36mWhen [0m[36mUser selects Authors from search criterion picklist and enters "<Author_Name>"[0m
+    [36mAnd [0m[36mclicks on search[0m
+    [36mThen [0m[36mSystem responds with results of all "<Author_Name>"[0m
+
+    Examples: 
+[34mFinished Scenario[0m
+
+  @Positive @Search @All
+  Scenario Outline: Search on author with WildCard --Positive Scenario      [90m# NewSearchTest.feature:33[0m
+    [32mGiven [0m[32mThe User is logged in[0m                                             [90m# NewSearchTest.the_User_is_logged_in()[0m
+    [32mWhen [0m[32mUser selects Authors from search criterion picklist and enters "[0m[32m[1m*[0m[32m"[0m [90m# NewSearchTest.user_selects_Authors_from_search_criterion_picklist_and_enters(String)[0m
+    [32mAnd [0m[32mclicks on search[0m                                                    [90m# NewSearchTest.clicks_on_search()[0m
+    [32mThen [0m[32mSystem responds with results of all "[0m[32m[1m*[0m[32m"[0m                            [90m# NewSearchTest.system_responds_with_results_of_all(String)[0m
+
+  @Negative
+  Scenario Outline: Search on References fails--Negative Scenario                              [90m# NewSearchTest.feature:35[0m
+    [36mGiven [0m[36mThe User is logged in[0m
+    [36mWhen [0m[36mUser selects References from search criterion picklist and enters "<References_Name>"[0m
+    [36mAnd [0m[36mclicks on search[0m
+    [36mThen [0m[36mSystem responds with callout from search box reading Please fill out this field[0m
+
+    Examples: 
+[34mFinished Scenario[0m
+
+  @Search @Negative @All
+  Scenario Outline: Search on References fails--Negative Scenario                        [90m# NewSearchTest.feature:43[0m
+    [32mGiven [0m[32mThe User is logged in[0m                                                          [90m# NewSearchTest.the_User_is_logged_in()[0m
+    [32mWhen [0m[32mUser selects References from search criterion picklist and enters "[0m[32m[1m[0m[32m"[0m            [90m# NewSearchTest.user_selects_References_from_search_criterion_picklist_and_enters(String)[0m
+    [32mAnd [0m[32mclicks on search[0m                                                                 [90m# NewSearchTest.clicks_on_search()[0m
+    [32mThen [0m[32mSystem responds with callout from search box reading Please fill out this field[0m [90m# NewSearchTest.system_responds_with_callout_from_search_box_reading_Please_fill_out_this_field()[0m
+
+  @Positive
+  Scenario Outline: Search on References --Positive Scenario                                   [90m# NewSearchTest.feature:46[0m
+    [36mGiven [0m[36mThe User is logged in[0m
+    [36mWhen [0m[36mUser selects References from search criterion picklist and enters "<References_Name>"[0m
+    [36mAnd [0m[36mclicks on search[0m
+    [36mThen [0m[36mSystem responds with results of "<References_Name>"[0m
+
+    Examples: 
+[34mFinished Scenario[0m
+
+  @Positive @Search @All
+  Scenario Outline: Search on References --Positive Scenario                       [90m# NewSearchTest.feature:54[0m
+    [32mGiven [0m[32mThe User is logged in[0m                                                    [90m# NewSearchTest.the_User_is_logged_in()[0m
+    [32mWhen [0m[32mUser selects References from search criterion picklist and enters "[0m[32m[1mMayur[0m[32m"[0m [90m# NewSearchTest.user_selects_References_from_search_criterion_picklist_and_enters(String)[0m
+    [32mAnd [0m[32mclicks on search[0m                                                           [90m# NewSearchTest.clicks_on_search()[0m
+    [32mThen [0m[32mSystem responds with results of "[0m[32m[1mMayur[0m[32m"[0m                                   [90m# NewSearchTest.system_responds_with_results_of(String)[0m
+
+  @Positive
+  Scenario Outline: Search on References with WildCard --Positive Scenario                     [90m# NewSearchTest.feature:57[0m
+    [36mGiven [0m[36mThe User is logged in[0m
+    [36mWhen [0m[36mUser selects References from search criterion picklist and enters "<References_Name>"[0m
+    [36mAnd [0m[36mclicks on search[0m
+    [36mThen [0m[36mSystem responds with results of all "<References_Name>"[0m
+
+    Examples: 
+[34mFinished Scenario[0m
+
+  @Positive @Search @All
+  Scenario Outline: Search on References with WildCard --Positive Scenario     [90m# NewSearchTest.feature:65[0m
+    [32mGiven [0m[32mThe User is logged in[0m                                                [90m# NewSearchTest.the_User_is_logged_in()[0m
+    [32mWhen [0m[32mUser selects References from search criterion picklist and enters "[0m[32m[1m*[0m[32m"[0m [90m# NewSearchTest.user_selects_References_from_search_criterion_picklist_and_enters(String)[0m
+    [32mAnd [0m[32mclicks on search[0m                                                       [90m# NewSearchTest.clicks_on_search()[0m
+    [31mThen [0m[31mSystem responds with results of all "[0m[31m[1m*[0m[31m"[0m                               [90m# NewSearchTest.system_responds_with_results_of_all(String)[0m
+      [31mjava.lang.AssertionError
+      	at org.junit.Assert.fail(Assert.java:86)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at org.junit.Assert.assertFalse(Assert.java:64)
+      	at org.junit.Assert.assertFalse(Assert.java:74)
+      	at com.cucmber.BNTiEditor.NewSearchTest.system_responds_with_results_of_all(NewSearchTest.java:115)
+      	at ✽.Then System responds with results of all "*"(NewSearchTest.feature:61)
+      [0m
+
+  @Negative
+  Scenario Outline: Search on Names fails--Negative Scenario                             [90m# NewSearchTest.feature:68[0m
+    [36mGiven [0m[36mThe User is logged in[0m
+    [36mWhen [0m[36mUser selects Names from search criterion picklist and enters "<Names_Name>"[0m
+    [36mAnd [0m[36mclicks on search[0m
+    [36mThen [0m[36mSystem responds with callout from search box reading Please fill out this field[0m
+
+    Examples: 
+[34mFinished Scenario[0m
+
+  @Search @Negative @All
+  Scenario Outline: Search on Names fails--Negative Scenario                             [90m# NewSearchTest.feature:76[0m
+    [32mGiven [0m[32mThe User is logged in[0m                                                          [90m# NewSearchTest.the_User_is_logged_in()[0m
+    [32mWhen [0m[32mUser selects Names from search criterion picklist and enters "[0m[32m[1m[0m[32m"[0m                 [90m# NewSearchTest.user_selects_Names_from_search_criterion_picklist_and_enters(String)[0m
+    [32mAnd [0m[32mclicks on search[0m                                                                 [90m# NewSearchTest.clicks_on_search()[0m
+    [32mThen [0m[32mSystem responds with callout from search box reading Please fill out this field[0m [90m# NewSearchTest.system_responds_with_callout_from_search_box_reading_Please_fill_out_this_field()[0m
+
+  @Positive
+  Scenario Outline: Search on Names --Positive Scenario                              [90m# NewSearchTest.feature:79[0m
+    [36mGiven [0m[36mThe User is logged in[0m
+    [36mWhen [0m[36mUser selects Names from search criterion picklist and enters "<Names_Name>"[0m
+    [36mAnd [0m[36mclicks on search[0m
+    [36mThen [0m[36mSystem responds with results of "<Names_Name>"[0m
+
+    Examples: 
+[34mFinished Scenario[0m
+
+  @Positive @Search @All
+  Scenario Outline: Search on Names --Positive Scenario                       [90m# NewSearchTest.feature:87[0m
+    [32mGiven [0m[32mThe User is logged in[0m                                               [90m# NewSearchTest.the_User_is_logged_in()[0m
+    [32mWhen [0m[32mUser selects Names from search criterion picklist and enters "[0m[32m[1mMayur[0m[32m"[0m [90m# NewSearchTest.user_selects_Names_from_search_criterion_picklist_and_enters(String)[0m
+    [32mAnd [0m[32mclicks on search[0m                                                      [90m# NewSearchTest.clicks_on_search()[0m
+    [32mThen [0m[32mSystem responds with results of "[0m[32m[1mMayur[0m[32m"[0m                              [90m# NewSearchTest.system_responds_with_results_of(String)[0m
+
+  @Positive
+  Scenario Outline: Search on Names with WildCard --Positive Scenario                [90m# NewSearchTest.feature:90[0m
+    [36mGiven [0m[36mThe User is logged in[0m
+    [36mWhen [0m[36mUser selects Names from search criterion picklist and enters "<Names_Name>"[0m
+    [36mAnd [0m[36mclicks on search[0m
+    [36mThen [0m[36mSystem responds with results of all "<Names_Name>"[0m
+
+    Examples: 
+[34mFinished Scenario[0m
+
+  @Positive @Search @All
+  Scenario Outline: Search on Names with WildCard --Positive Scenario     [90m# NewSearchTest.feature:98[0m
+    [32mGiven [0m[32mThe User is logged in[0m                                           [90m# NewSearchTest.the_User_is_logged_in()[0m
+    [32mWhen [0m[32mUser selects Names from search criterion picklist and enters "[0m[32m[1m*[0m[32m"[0m [90m# NewSearchTest.user_selects_Names_from_search_criterion_picklist_and_enters(String)[0m
+    [32mAnd [0m[32mclicks on search[0m                                                  [90m# NewSearchTest.clicks_on_search()[0m
+    [32mThen [0m[32mSystem responds with results of all "[0m[32m[1m*[0m[32m"[0m                          [90m# NewSearchTest.system_responds_with_results_of_all(String)[0m
