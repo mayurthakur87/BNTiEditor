@@ -14,7 +14,7 @@ public class BeforeAfter {
 	public void GlobalTestSetup(Scenario scenario) {
 
 		System.out.println("---------GLOBAL TEST ENVIRONMENT---------");
-		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"//BROWSERS//geckodriver");
+		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"//..//browsers//geckodriver");
 	}
 
 	@After
